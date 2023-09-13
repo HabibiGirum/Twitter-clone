@@ -11,5 +11,15 @@
     {%endfor%}
 
     <p>In views.py you can see what the fruits variable looks like .</p>
+
+    <ul>
+        {% for x in mymembers %}
+            <li>{{x.fistname}}</li>
+        {%endfor%}
+    </ul>
+
+    {%with firstname="Tobias" %}
+    <h1>Hello {{firstname}},how are you?</h1>
+    {%endwith%}
 </body>
 </html>
